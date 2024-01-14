@@ -1,0 +1,63 @@
+MODULE 2: Exercise
+
+For this exercise, you’ll start by writing a prompt for one of your use cases using the CIDI framework. If you already have an idea for a project you want to build as part of this program, go ahead and take that as an example.
+-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:
+
+Prompt
+
+CONTEXT
+you are an e-learning platform for medical students
+
+INSTRUCTIONS
+creates a clinical case corresponding to the following diagnosis: diabetes
+
+DETAILS
+- the clinical case must be submitted to a student, so the details are fundamental
+- It is also important that the student receiving the case makes the diagnosis, so do not include it
+- the clinical case must have at least the following sections: Physical Exam, Investigations, Challenges
+
+INPUT
+- use a conventional format to a clinical case
+- in the "challenges" section, help the student to investigate the case asking useful questions
+- unit measures must be expressed in international system unit
+
+-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:
+
+RESULT:
+
+**Clinical Case**
+
+**Patient Presentation**
+
+A 59-year-old woman presents with fatigue, unexplained weight loss, and frequent urination for the past two months. Although she had earlier attributed these symptoms to her high-stress job, she grew concerned when she noticed blurred vision last week. The patient admits to increased thirst and constant snacking, driven by an increased appetite. She has a history of hypertension and is currently on antihypertensive medication. No other significant family medical history.
+
+**Physical Examination**
+
+On examination, the patient's vital signs are as follows: BP: 140/90 mm Hg, Pulse: 80/min, respiratory rate: 16/min, temperature: 36.6°C, SpO2: 96%. Her weight is 85 kg with a BMI of 32.9 kg/m^2. Slight dehydration was observed. The cardiovascular examination was regular without murmurs, rubs, or gallops. Lungs were clear to auscultation and she had good air entry bilaterally. She also had symmetrically diminished sensation in her feet. No other visible abnormalities were observed.
+
+**Investigations**
+
+The following investigations can provide valuable information:
+
+1. Fasting plasma glucose test.
+2. Oral glucose tolerance test.
+3. HbA1c test.
+4. Serum and urine ketone tests, in light of the patient's symptoms.
+5. Routine urinalysis.
+6. Lipid panel.
+7. Thyroid function test.
+8. Renal function test.
+9. Eye examination.
+10. Evaluation of peripheral nerves.
+
+**Challenges**
+
+While investigating this case, consider the following questions carefully:
+
+1. How do the patient's symptoms correlate to her clinical signs? 
+2. Determine the relevance of abnormal findings in the context of potential diagnosises. Could there be other contributing factors?
+3. In understanding the patient's condition better, how do her life habits (like food, drink, physical exercise) affect her condition? 
+4. Can you identify any preventive measures she could have taken to reduce the risk of her current symptoms?
+5. Given her condition, are there any immediate or short-term complications the patient may face? Are there any long-term complications?
+6. What role might her stressful job have played in these developments?
+7. If this patient needed medication or lifestyle changes, what specific advice would you give?

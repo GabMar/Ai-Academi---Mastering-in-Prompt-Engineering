@@ -1,0 +1,72 @@
+MODULE 2: Exercise
+
+For this exercise, you’ll start by writing a prompt for one of your use cases using the CIDI framework. If you already have an idea for a project you want to build as part of this program, go ahead and take that as an example.
+-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:
+
+Prompt
+
+CONTEXT
+you are an assistant who helps query a database of clinical cases
+
+INSTRUCTIONS
+creates a clinical case corresponding to the following diagnosis: diabetes
+
+DETAILS
+- the clinical case must be submitted to a student, so the details are fundamental
+- It is also important that the student receiving the case makes the diagnosis, so do not include it
+- the clinical case must have at least the following sections: Physical Exam, Investigations, Challenges
+
+INPUT
+- use a conventional format to a clinical case
+- in the "challenges" section, help the student to investigate the case asking useful questions
+- unit measures must be expressed in international system unit
+
+-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:
+
+RESULT 1:
+
+CASE PRESENTATION
+A 54-year-old female presents to the clinic complaining of increased thirst and frequent urination over the past few weeks. She also reports that she has been feeling tired and have unexplained weight loss. 
+
+The patient shares that she has a history of hypertension and obesity. She has been trying to manage her hypertension with lifestyle modification and medication.
+
+PHYSICAL EXAM
+General: Alert but looks slightly fatigued. No distress.
+HEENT: Pupils round and reactive to light. No jaundice.
+Neck: Thyroid not enlarged, no neck stiffness.
+Chest: Regular breath sounds.
+Cardiovascular: Regular rate and rhythm, no murmurs.
+Abdomen: Soft, non-tender.
+Neurological: Alert and orientated x 3.
+BMI: The patient's BMI is calculated to be 30.2 kg/m2.
+
+INVESTIGATIONS
+Blood tests were ordered:
+- FBP
+- Lipid profile
+- Kidney function
+- Liver Function
+- HbA1c
+- Blood Glucose Level
+
+Results presented the following findings:
+- Elevated HbA1c: 8.0% (normal range: 4.0 - 5.6%)
+- Blood Glucose Level: 11.1 mmol/L (between 7-5 mmol/L is pre-diabetes; >7 mmol/L or >126 mg/dL on two separate tests suggest diabetes)
+- Total cholesterol: 5.6 mmol/L (normal level: < 5.2 mmol/L)
+- Triglyceride level: 2.0 mmol/L (normal level: <= 1.7mmol/L)
+- Blood pressure: 160/90 mmHg (High)
+
+Urine test was also performed and showed glycosuria.
+
+CHALLENGES
+To help prompt your critical thinking in this case, reflect on these questions:
+
+1. Considering the patient's symptoms, what differential diagnoses can you formulate?
+2. Why is the elevated blood sugar level significant for this patient?
+3. What criteria are used to diagnose type 2 diabetes?
+4. Given the patient's history of obesity and hypertension, how might these conditions contribute to her current state?
+5. What other investigations might help confirm your diagnosis?
+6. What potential complications may arise if the patient's condition remains untreated?
+7. How should management or treatment strategies be tailored for this patient?
+
+Remember to draw upon your understanding of epidemiology, pathophysiology, and clinical manifestations in your discussions.

@@ -1,0 +1,86 @@
+MODULE 2: Exercise
+
+For this exercise, you’ll start by writing a prompt for one of your use cases using the CIDI framework. If you already have an idea for a project you want to build as part of this program, go ahead and take that as an example.
+-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:
+
+Prompt
+
+CONTEXT
+you are an e-learning platform for medical students
+
+INSTRUCTIONS
+creates a clinical case corresponding to the following diagnosis: diabetes
+
+DETAILS
+- the clinical case must be submitted to a student, so the details are fundamental
+- It is also important that the student receiving the case makes the diagnosis, so do not include it
+- the clinical case must have at least the following sections: Physical Exam, Investigations, Challenges
+
+INPUT
+- use a conventional format to a clinical case
+- in the "challenges" section, help the student to investigate the case asking useful questions
+- unit measures must be expressed in international system unit
+
+-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:
+
+RESULT:
+
+Patient Profile:
+
+Name: John Smith
+Age: 45 years old
+Gender: Male
+Occupation: Accountant
+
+Presenting Complaint:
+
+John Smith, a 45-year-old male accountant, presents to the clinic with complaints of increased thirst, frequent urination, unexplained weight loss, and excessive tiredness over the past few weeks. He reports feeling weak and often struggles to concentrate at work. John's father has a history of type 2 diabetes.
+
+Physical Exam:
+
+General Appearance: The patient appears tired and fatigued. He appears to have lost weight since his last visit. Vital signs are as follows:
+- Blood Pressure: 130/80 mmHg
+- Heart Rate: 80 bpm
+- Respiratory Rate: 16 breaths per minute
+- Temperature: 36.8°C
+
+Body Mass Index (BMI):
+Height: 6 feet (182 cm)
+Weight: 176 lbs (80 kg)
+BMI: 24.1 kg/m²
+
+Skin: Dry and pale
+
+Eyes: No abnormal findings on fundoscopy. No signs of cataracts or retinopathy.
+
+Cardiovascular: Regular rate and rhythm, with no murmurs, rubs, or gallops. Capillary refill time less than 2 seconds.
+
+Respiratory: Clear breath sounds bilaterally, no signs of respiratory distress or cyanosis.
+
+Abdomen: Soft and non-tender on palpation. No organomegaly or masses detected. 
+
+Neurological: Oriented to time, place, and person. No signs of cranial nerve abnormalities. No focal motor or sensory deficits. Deep tendon reflexes are intact.
+
+Investigations:
+
+1. Fasting Plasma Glucose (FPG) Test:
+   - Fasting Blood Glucose: 250 mg/dL (normal range: 70-99 mg/dL)
+
+2. HbA1c Test:
+   - HbA1c Level: 9.5% (normal range: < 5.7%)
+
+3. Lipid Profile:
+   - Total Cholesterol: 220 mg/dL (normal range: < 200 mg/dL)
+   - Triglycerides: 180 mg/dL (normal range: < 150 mg/dL)
+   - LDL Cholesterol: 150 mg/dL (normal range: < 100 mg/dL)
+   - HDL Cholesterol: 40 mg/dL (normal range: > 40 mg/dL)
+
+Challenges:
+
+1. What additional investigations would you order to confirm the diagnosis?
+2. Considering the patient's risk factors and symptoms, what type of diabetes is most likely in this case?
+3. How would you assess the patient's kidney function? Which specific lab test(s) would you order?
+4. What lifestyle modifications would you suggest to the patient?
+5. Are there any comorbidities or complications associated with this condition that you would need to assess?
+
+Note: This is a clinical case of diabetes, but the type of diabetes has not been specified. The student needs to determine the type based on the presented information and investigative findings.

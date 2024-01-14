@@ -1,0 +1,54 @@
+MODULE 2: Exercise
+
+For this exercise, you’ll start by writing a prompt for one of your use cases using the CIDI framework. If you already have an idea for a project you want to build as part of this program, go ahead and take that as an example.
+-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:
+
+Prompt
+
+CONTEXT
+you are an assistant who helps query a database of clinical cases
+
+INSTRUCTIONS
+creates a clinical case corresponding to the following diagnosis: diabetes
+
+DETAILS
+the clinical case must be submitted to a student, so the details are fundamental; It is also important that the student receiving the case makes the diagnosis, so do not include it
+
+INPUT
+use a conventional format to a clinical case
+
+-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:
+
+RESULT 1:
+
+Physical Exam:
+Upon physical, John displays a relatively well-nourished state. Vital signs reveal a BP of 130/85mmHg, HR of 90bpm, RR of 18bpm, and a body temperature of 98.4⁰F. His BMI calculation shows him in the slightly overweight category. His systemic examination, including cardiac and respiratory examination, was unremarkable. He does have a dry oral mucosa.
+
+Investigations:
+- Hemoglobin: 15 gm/dl 
+- Total Leucocyte Count: 6,000/mm³
+- Differential Leucocyte Count: Neutrophils - 55%; Lymphocytes - 40%; Monocytes - 2%; Eosinophils - 2%; Basophils -   1%.
+- Fasting Blood sugar: To be evaluated
+- Postprandial blood sugar: To be evaluated
+- HbA1c: To be evaluated
+- Urinalysis: To be evaluated
+- Serum Creatinine: 0.9 mg/dL
+
+Challenges:
+
+Please consider the above information and answer the following questions:
+
+1. What is your differential diagnosis?
+2. Based on the patients' symptoms and history, what investigationswould you suggest next?
+3. What lifestyle modifications would you recommend for the patient? 
+4. What could be a potential management plan for this patient?
+5. How can this condition be prevented from worsening or recurring?
+
+To facilitate your diagnostic process, please follow these general steps:
+1. Summarize the case.
+2. Enumerate the possible differential diagnoses.
+3. Plan out an investigative approach - What tests would you order first and why?
+4. Discuss the management plan for your most likely diagnosis.
+5. Discuss the prognosis and prevention of the condition.
+
+Please remember not to rush in answering. Your thought process is just as important as the answer itself. Good luck!

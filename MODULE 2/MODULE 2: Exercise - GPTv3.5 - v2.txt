@@ -1,0 +1,77 @@
+MODULE 2: Exercise
+
+For this exercise, you’ll start by writing a prompt for one of your use cases using the CIDI framework. If you already have an idea for a project you want to build as part of this program, go ahead and take that as an example.
+-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:
+
+Prompt
+
+CONTEXT
+you are an assistant who helps query a database of clinical cases
+
+INSTRUCTIONS
+creates a clinical case corresponding to the following diagnosis: diabetes
+
+DETAILS
+- the clinical case must be submitted to a student, so the details are fundamental
+- It is also important that the student receiving the case makes the diagnosis, so do not include it
+- the clinical case must have at least the following sections: Physical Exam, Investigations, Challenges
+
+INPUT
+- use a conventional format to a clinical case
+- in the "challenges" section, help the student to investigate the case asking useful questions
+- unit measures must be expressed in international system unit
+
+-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:
+
+RESULT 1:
+
+Clinical Case: Diabetes
+
+Patient information:
+- Name: John Doe
+- Age: 45
+- Gender: Male
+
+Chief Complaint:
+John Doe presents with increased thirst and frequent urination for the past few weeks. He also complains of fatigue and blurry vision.
+
+History of Present Illness:
+The patient reports a gradual onset of symptoms. He has noticed an increased need to urinate, especially during the night (nocturia). The frequency of urination has significantly increased, and he has experienced increased thirst as well. John also mentions feeling tired and fatigued, regardless of the amount of sleep he gets. He has noticed a slight blurriness in his vision recently.
+
+Past Medical History:
+No significant medical history is reported by the patient.
+
+Family History:
+John's father had type 2 diabetes.
+
+Physical Exam:
+General: John appears overweight and does not show obvious signs of distress.
+Vital Signs:
+- Blood Pressure: 140/90 mmHg
+- Heart Rate: 80 bpm
+- Respiratory Rate: 16 breaths per minute
+- Oxygen Saturation: 98% on room air
+
+General Examination:
+- Skin: No significant abnormalities noted.
+- Eyes: Fundoscopic examination reveals mild retinopathy.
+- Lungs: Clear to auscultation bilaterally.
+- Heart: Regular rate and rhythm, no murmurs or abnormal sounds.
+- Abdomen: Soft, non-tender, no organomegaly.
+- Neurological Examination: No focal deficits observed.
+
+Investigations:
+1. Fasting Plasma Glucose (FPG) level: Elevated (greater than or equal to 126 mg/dL)
+2. Oral Glucose Tolerance Test (OGTT): Results pending
+3. Glycosylated Hemoglobin (HbA1c) level: Elevated (greater than or equal to 6.5%)
+4. Lipid Profile: To assess lipid abnormalities associated with diabetes.
+5. Urine Microalbumin: To evaluate kidney function and detect early signs of kidney damage.
+
+Challenges:
+1. What is the most likely diagnosis for John Doe's symptoms?
+2. Based on the physical exam, what other complications might be associated with the diagnosis?
+3. What further investigations are warranted to confirm the diagnosis of diabetes?
+4. How can we manage and control John Doe's diabetes effectively?
+5. Considering John's family history, what lifestyle modifications should he adopt to reduce his risk of long-term complications?
+
+Note: This clinical case is presented for educational purposes only. The diagnosis should be made by the student based on the information provided and using proper diagnostic criteria and guidelines.
