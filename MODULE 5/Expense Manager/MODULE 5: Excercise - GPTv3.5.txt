@@ -1,0 +1,268 @@
+Context
+You're an expense tracker generator
+
+Instructions
+The user will send a list of expense with amount, date, category of the expense and payment method. You will reply with a CSV and no other text.
+
+Details
+- The columns of the CSV will be: name, amount, date, category, payment method.
+- Dates must be expressed in YYYY-MM-DD
+
+Input
+- PS5 game, 02 Feb, 30€, category: entertainment
+- pizza, 03 Feb, 15€, category: food
+- 3 pair of socks, 5€, 4 Feb, category: wardrobe
+
+---------------------------------------------------------------------------------
+
+Output
+PS5 game,30€,2022-02-02,entertainment
+pizza,15€,2022-02-03,food
+3 pair of socks,5€,2022-02-04,wardrobe
+
+##################################################################################################################################################
+
+Context
+You're an expense tracker generator system that communicates via API.
+
+Instructions
+The user will send a list of expense with amount, date, category of the expense and payment method. You will reply with a CSV file and no other text.
+
+Details
+- The columns of the CSV will be: name, amount, date, category, payment method.
+- Dates must be expressed in YYYY-MM-DD
+- Every value must be wrapped in " "
+- Sort the expenses by date descending
+
+Input
+- PS5 game, 02 Feb, 30€, category: entertainment, paypal
+- pizza, 03 Feb, 15€, category: food, cash
+- 3 pair of socks, 5€, 4 Feb, category: wardrobe, paypal
+- One Piece action figure, 45,10€, 1 Jan, category:entertainment, credit card
+
+---------------------------------------------------------------------------------
+
+Output
+"name","amount","date","category","payment method"
+"One Piece action figure","45,10€","2023-01-01","entertainment","credit card"
+"pizza","15€","2022-02-03","food","cash"
+"3 pair of socks","5€","2022-02-04","wardrobe","paypal"
+"PS5 game","30€","2022-02-02","entertainment","paypal"
+
+##################################################################################################################################################
+
+Context
+You're an expense tracker generator system that communicates via API.
+
+Instructions
+The user will send a list of expense with amount, date, category of the expense and payment method. You will reply with a CSV file and no other text.
+
+Details
+- The columns of the CSV will be: name, amount, date, category, payment method.
+- Dates must be expressed in YYYY-MM-DD
+- Every value must be wrapped in " "
+- Sort the expenses by date descending
+
+Example
+If the user gives:
+- One Piece action figure, 45,10€, 1 Jan, category:entertainment, credit card
+You will reply with:
+"One Piece action figure","45,10€","2023-01-01","entertainment","credit card"
+
+Input
+- PS5 game, 02 Feb, 30€, category: entertainment, paypal
+- pizza, 03 Feb, 15€, category: food, cash
+- 3 pair of socks, 5€, 4 Feb, category: wardrobe, paypal
+- One Piece action figure, 45,10€, 1 Jan, category:entertainment, credit card
+
+---------------------------------------------------------------------------------
+
+"PS5 game","30€","2023-02-02","entertainment","paypal"
+"pizza","15€","2023-02-03","food","cash"
+"3 pair of socks","5€","2023-02-04","wardrobe","paypal"
+"One Piece action figure","45,10€","2023-01-01","entertainment","credit card"
+
+##################################################################################################################################################
+
+Context
+You're an expense tracker generator system that communicates via API.
+
+Instructions
+The user will send a list of expense with amount, date, category of the expense and payment method. You will reply with a CSV file and no other text.
+
+Details
+- The columns of the CSV will be: name, amount, date, category, payment method.
+- Dates must be expressed in YYYY-MM-DD
+- Every value must be wrapped in " "
+- Sort the expenses by date descending
+
+Example
+If the user gives:
+- One Piece action figure, 45,10€, 1 Jan, category:entertainment, credit card
+You will reply with:
+"One Piece action figure","45,10€","2023-01-01","entertainment","credit card"
+
+Input
+- PS5 game, 02 Feb, 30€, category: entertainment, paypal
+- pizza, 03 Feb, 15€, category: food, cash
+- 3 pair of socks, 5€, 4 Feb, category: wardrobe, paypal
+- One Piece action figure, 45,10€, 1 Jan, category:entertainment, credit card
+
+Explain the steps you take one-by-one and then generate the result
+
+---------------------------------------------------------------------------------
+
+Steps:
+1. Parse the input to extract the individual expense details such as name, amount, date, category, and payment method.
+2. Format the extracted values by wrapping them in " ".
+3. Sort the expenses by date in descending order.
+4. Create a CSV file with the formatted expenses.
+5. Return the CSV file as the final result.
+
+Result:
+"PS5 game","02 Feb","30€","entertainment","paypal"
+"pizza","03 Feb","15€","food","cash"
+"3 pair of socks","5€","04 Feb","wardrobe","paypal"
+"One Piece action figure","45,10€","01 Jan","entertainment","credit card"
+
+##################################################################################################################################################
+
+Context
+You're an expense tracker generator system that communicates via API.
+
+Instructions
+The user will send a list of expense with amount, date, category of the expense and payment method. You will reply with a CSV file and no other text.
+
+Details
+- The columns of the CSV will be: name, amount, date, category, payment method.
+- Dates must be expressed in YYYY-MM-DD
+- Every value must be wrapped in " "
+- Sort the expenses by date descending
+- Output with only the CSV and no other text as it will be read by a CSV reader
+
+Example
+If the user gives:
+- Naruto action figure, 50€, 1 Jan, category:entertainment, credit card
+- Pasta, 3€, 4 Feb, category:food, cash
+You will reply with:
+```
+"One Piece action figure","45,10€","2024-01-01","entertainment","credit card"
+"Pasta","3€","2024-02-04","food","cash"
+```
+
+Chain of thought
+- Parse the input to extrapolate the data
+- Format the values by wrapping them in " "
+- Format the dates in YYYY-MM-DD
+- Sort the dates descending:
+    - First sort by year
+    - then sort by month
+    - and last sort by day
+- Generate the CSV
+
+Input
+- PS5 game, 02 Feb, 30€, category: entertainment, paypal
+- pizza, 03 Feb, 15€, category: food, cash
+- 3 pair of socks, 5€, 4 Feb, category: wardrobe, paypal
+- One Piece action figure, 45,10€, 1 Jan, category:entertainment, credit card
+
+---------------------------------------------------------------------------------
+
+"One Piece action figure","45,10€","2024-01-01","entertainment","credit card"
+"3 pair of socks","5€","2024-02-04","wardrobe","paypal"
+"pizza","15€","2024-02-03","food","cash"
+"PS5 game","30€","2024-02-02","entertainment","paypal"
+
+##################################################################################################################################################
+
+Context
+You're an expense tracker generator system that communicates via API.
+
+Instructions
+The user will send a list of expense with amount, date, category of the expense and payment method. You will reply with a CSV file and no other text.
+
+Details
+- The columns of the CSV will be: name, amount, date, category, payment method.
+- Dates must be expressed in YYYY-MM-DD
+- Every value must be wrapped in " "
+- Sort the expenses by date descending
+- Output with only the CSV and no other text as it will be read by a CSV reader
+
+Example
+If the user gives:
+- Naruto action figure, 50€, 1 Jan, category:entertainment, credit card
+- Pasta, 3€, 4 Feb, category:food, cash
+You will reply with:
+"One Piece action figure","45,10€","2024-01-01","entertainment","credit card"
+"Pasta","3€","2024-02-04","food","cash"
+
+Chain of thought
+- Parse the input to extrapolate the data
+- Format the values by wrapping them in " "
+- Format the dates in YYYY-MM-DD
+- Sort the dates:
+    - First sort by year YYYY (ASC)
+    - then sort by month MM (ASC)
+    - and last sort by day DD (ASC)
+- Re-arrange the CSV with the sorted dates ascending
+- Output the CSV
+
+Input
+- PS5 game, 02 Feb, 30€, category: entertainment, paypal
+- pizza, 03 Feb, 15€, category: food, cash
+- 3 pair of socks, 5€, 4 Feb, category: wardrobe, paypal
+- One Piece action figure, 45,10€, 1 Jan, category:entertainment, credit card
+
+---------------------------------------------------------------------------------
+
+"One Piece action figure","45,10€","2024-01-01","entertainment","credit card"
+"PS5 game","30€","2024-02-02","entertainment","paypal"
+"pizza","15€","2024-02-03","food","cash"
+"3 pair of socks","5€","2024-02-04","wardrobe","paypal"
+
+##################################################################################################################################################
+
+Context
+You're an expense tracker generator system that communicates via API, you reply only CSV files.
+
+Instructions
+The user will send a list of expense with amount, date, category of the expense and payment method. You will reply with a CSV file and no other text.
+
+Details
+- The columns of the CSV will be: name, amount, date, category, payment method.
+- Dates must be expressed in YYYY-MM-DD
+- Every value must be wrapped in " "
+- Sort the expenses by date descending
+- Output with only the CSV and no other text as it will be read by a CSV reader
+
+Example
+If the user gives:
+- Naruto action figure, 50€, 1 Jan, category:entertainment, credit card
+- Pasta, 3€, 4 Feb, category:food, cash
+You will reply with:
+"One Piece action figure","45,10€","2024-01-01","entertainment","credit card"
+"Pasta","3€","2024-02-04","food","cash"
+
+Chain of thought
+- Parse the input to extrapolate the data
+- Format the values by wrapping them in " "
+- Format the dates in YYYY-MM-DD
+- Sort the dates:
+    - First sort by year YYYY (ASC)
+    - then sort by month MM (ASC)
+    - and last sort by day DD (ASC)
+- Re-arrange the CSV with the sorted dates ascending
+- Output the CSV
+
+Input
+- PS5 game, 02 Feb, 30€, category: entertainment, paypal
+- pizza, 03 Feb, 15€, category: food, cash
+- 3 pair of socks, 5€, 4 Feb, category: wardrobe, paypal
+- One Piece action figure, 45,10€, 1 Jan, category:entertainment, credit card
+
+---------------------------------------------------------------------------------
+
+"One Piece action figure","45,10€","2024-01-01","entertainment","credit card"
+"3 pair of socks","5€","2024-02-04","wardrobe","paypal"
+"pizza","15€","2024-02-03","food","cash"
+"PS5 game","30€","2024-02-02","entertainment","paypal"
