@@ -9,6 +9,7 @@ This repository is dedicated to the "Master in Prompt Engineering" course offere
 - **Key Topics**: Advanced AI Prompting, AI Product Integration, Workflow Optimization.
 
 ## Repository Structure
-- `Module2/`: Excercise for Module 2: "Writing a prompt for one use cases using the CIDI framework".
-
+- `MODULE 2/`: Excercise for Module 2: "Writing a prompt for one use cases using the CIDI framework".
+- `MODULE 5/`: Excercise for Module 5: "Testing advanced prompting strategies"
+- `ADVANCED PROMPTS/`: Advanced prompting strategies applied for personal course project
 
